@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private String email = "";
     private String password = "";
     private String prueba="";
+    private String prueba2="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
