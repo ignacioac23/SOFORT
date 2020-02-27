@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/nav_menu"
+        android:icon="@drawable/baseline_home_black_24dp"
+        android:title="@string/nav_menu" />
+    <item
+        android:id="@+id/nav_lineas"
+        android:icon="@drawable/baseline_timeline_black_24dp"
+        android:title="@string/nav_lineas" />
+    <item
+        android:id="@+id/nav_paradas"
+        android:icon="@drawable/baseline_directions_bus_black_24dp"
+        android:title="@string/nav_paradas" />
+    <item
+        android:id="@+id/nav_cuenta"
+        android:icon="@drawable/baseline_account_circle_black_24dp"
+        android:title="@string/nav_cuenta" />
+</menu>
+
+
+
