@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private String email = "";
     private String password = "";
+    private String prueba="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
