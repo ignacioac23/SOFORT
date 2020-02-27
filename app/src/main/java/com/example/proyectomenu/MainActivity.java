@@ -18,42 +18,44 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText edtEmail,edtPassword;
-    Button btnLogin,btnCrearCuenta;
+    EditText edtEmail,edtPassword;  //// EditText de la pantalla principal
+    Button btnLogin,btnCrearCuenta; ///// Botones de la pantalla principal
+
+    //Asignando variables
 
     private FirebaseAuth mAuth;
+
     private String email = "";
     private String password = "";
-    private String prueba="";
-    private String prueba2="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.principal);
-        mAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();   /// Instanciando la variable del Authentication
         edtEmail=(EditText)findViewById(R.id.edtEmail);
         edtPassword=(EditText)findViewById(R.id.edtPass);
         btnLogin=(Button) findViewById(R.id.btnIni);
         btnCrearCuenta=(Button) findViewById(R.id.btnCrearCuenta);
 
-
+        ///// ESTO ES LO QUE VA A HACER EL BOTON CUANDO SE PRESIONE
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 email = edtEmail.getText().toString();
                 password = edtPassword.getText().toString();
                 if (!email.isEmpty() && !password.isEmpty()) {
-                    validarUsuario();
+                    validarUsuario();  /// SI AMBOS CAMPOS ESTAN ESCRITOS ENTONCES SE COMIENZA LA FUNCION PARA VALIDAR USUARIO
                 } else {
                     Toast.makeText(MainActivity.this, "Debe rellenar los campos", Toast.LENGTH_LONG).show();
                 }
             }
         });
+        ///// ESTO ES LO QUE VA A HACER EL BOTON CUANDO SE PRESIONE
         btnCrearCuenta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),Registro.class);
+                Intent intent = new Intent(getApplicationContext(),Registro.class); //// AQUI SE INICIA LA ACTIVIDAD PARA CREAR LA CUENTA
                 startActivity(intent);
             }
         });
@@ -62,8 +64,8 @@ public class MainActivity extends AppCompatActivity {
     private void validarUsuario() {
         mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
+            public void onComplete(@NonNull Task<AuthResult> task) { //// ESTE METODO ES EXCLUSIVO DE FIREBASE
+                if(task.isSuccessful()){ //// SI SE CUMPLE LA TAREA DE VALIDACION ENTONCES SE MUESTRA LA PANTALLA DE LOS MENUS
                     startActivity(new Intent(MainActivity.this, Menus.class));
                     finish();
                 }else{
@@ -73,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /// SI EL USUARIO NO CERRO LA CUENTA EN CERRAR SESION, ENTONCES NO NECESITA LOGEARSE LA PROXIMA VEZ QUE ENTRE A LA APP
+    /// CON ESTE METODO SE COMIENZA LA ACTIVIDAD DE LOS MENUS SIN NECESIDAD DE LOGEARSE NUEVA,EMTE
     @Override
     protected void onStart() {
         super.onStart();

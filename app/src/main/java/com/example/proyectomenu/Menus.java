@@ -25,10 +25,12 @@ public class Menus extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.btmnavi);
+        setContentView(R.layout.btmnavi); /// ESTE ES EL XML DE LA PANTALLA
         mMainNav=(BottomNavigationView)findViewById(R.id.main_nav);
         getSupportFragmentManager().beginTransaction().replace(R.id.menu_frame,new menufragment()).commit();
+        /// EN LA LINEA DE ARRIBA SE COLOCA EL FRAGMENT QUE SE MOSTRARA AL INICIALIZAR LOS MENUS(LUEGO DE LOGEARSE)
 
+        /// CON ESTE METODO SE PUEDE NAVEGAR ENTRE LOS FRAGMENTS DEL MENU MEDIANTE UN SWITCH
         mMainNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {

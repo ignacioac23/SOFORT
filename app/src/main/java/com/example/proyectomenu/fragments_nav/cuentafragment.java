@@ -52,7 +52,7 @@ public class cuentafragment extends Fragment {
         id= cAuth.getCurrentUser().getUid();
         textBienve=(TextView)getView().findViewById(R.id.textBienv);
         dbRef= FirebaseDatabase.getInstance().getReference();
-        dbRef.child("Usuarios").addValueEventListener(new ValueEventListener() {
+        dbRef.child("Usuarios").addValueEventListener(new ValueEventListener() { /// AQUI SE OBTIENE EL EL NOMBRE DE LA CUENTA A TRAVES DE SU UID
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if(dataSnapshot.exists()){
@@ -69,7 +69,7 @@ public class cuentafragment extends Fragment {
         btnCerrar=(Button)getView().findViewById(R.id.btnCerrarSesion);
         btnCerrar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { /// CON ESTE METODO SE CIERRA LA SESION DEL USUARIO Y SE LLEVA A LA PANTALLA DE LOGIN
                 cAuth.signOut();
                 startActivity(new Intent(view.getContext(), MainActivity.class));
                 getActivity().finish();
