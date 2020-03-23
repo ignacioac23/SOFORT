@@ -13,4 +13,17 @@
     <string name="menu_fragment" />
     <string name="nav_cuenta">Cuenta</string>
     <string name="nav_forum">Foro</string>
+    <string name="title_activity_mapa">Map</string>
+
+
+    <string name="boton602"> 602    Playa Ancha-Con Con</string>
+    <string name="mapa101">Mapa</string>
+    <string name="title_activity_mapatiemporeal">Map</string>
+    <string name="Titulotarifa">TARIFAS LINEA 602</string>
+    <string name="TarifaLocal">Tarifa Local: $540</string>
+    <string name="TarifaDirecto">Tarifa Directo: $960</string>
+
+
+
+
 </resources>

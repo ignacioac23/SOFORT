@@ -21,19 +21,20 @@ public class Foro extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listadatos);
-        lv = (ListView)findViewById(R.id.listdatos);
+        lv = (ListView) findViewById(R.id.listdatos);
 
-        Query query= FirebaseDatabase.getInstance().getReference().child("Foro");
-        FirebaseListOptions<datos> options= new FirebaseListOptions.Builder<datos>()
+        Query query = FirebaseDatabase.getInstance().getReference().child("Foro");
+        FirebaseListOptions<datos> options = new FirebaseListOptions.Builder<datos>()
                 .setLayout(R.layout.perfildatos)
                 .setQuery(query, datos.class)
                 .build();
-        adapter= new FirebaseListAdapter(options) {
+        adapter = new FirebaseListAdapter(options) {
             @Override
             protected void populateView(View v, Object model, int position) {
 
             }
-        }
+        };
+
 
     }
 }

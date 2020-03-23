@@ -1,16 +1,1304 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments_nav.lineasfragment"
-    android:background="#d46aa6">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
-    <TextView
-        android:text="Lineas Fragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"/>
 
-</RelativeLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/estilo_lineas"
+            android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/texto_estilo"
+                android:text="Sol y Mar S.A"
+                android:textAlignment="center"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textFontWeight="600"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif-medium" />
+
+            <Button
+                android:id="@+id/solymar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/solymar"
+                android:drawableLeft="@mipmap/busceleste"
+                android:text=" 301    Peñablanca-Jardin Del Mar"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/solymar3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/solymar"
+                android:drawableLeft="@mipmap/busceleste"
+                android:text=" 303    Peñablanca-Con Con"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/solymar4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/solymar"
+                android:drawableLeft="@mipmap/busceleste"
+                android:text=" 304    Peñablanca-Gomez Carreño"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/solymar5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/solymar"
+                android:drawableLeft="@mipmap/busceleste"
+                android:text=" 305    Peñablanca-Puente Colmo"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/solymar6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/solymar"
+                android:drawableLeft="@mipmap/busceleste"
+                android:text=" 306    Peñablanca-Clinica Reñaca"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/solymar7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/solymar"
+                android:drawableLeft="@mipmap/busceleste"
+                android:text=" 307    Gumercindo-Belloro Sur-Con Con"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/solymar8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/solymar"
+                android:drawableLeft="@mipmap/busceleste"
+                android:text=" 308    Peñablanca-Miraflores"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/solymar9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/solymar"
+                android:drawableLeft="@mipmap/busceleste"
+                android:text=" 309    Peñablanca-Placilla"
+                android:textAlignment="viewStart" />
+
+
+            <TextView
+                android:id="@+id/toptur"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/texto_estilo"
+                android:text="Buses Del Gran Valparaíso S.A"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/quinientos"
+                android:drawableLeft="@mipmap/busquinientos"
+                android:text=" 501    Los Placeres-6 Sector"
+                android:textAlignment="viewStart" />
+
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/quinientos"
+                android:drawableLeft="@mipmap/busquinientos"
+                android:text=" 503   Placeres-Aduana "
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/quinientos"
+                android:drawableLeft="@mipmap/busquinientos"
+                android:text=" 504    Recreo-Playa Ancha-Pacífico"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/quinientos"
+                android:drawableLeft="@mipmap/busquinientos"
+                android:text=" 505    Esperanza-Marina Mercante"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/quinientos"
+                android:drawableLeft="@mipmap/busquinientos"
+                android:text=" 506    Polanco-Playa Ancha"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/quinientos"
+                android:drawableLeft="@mipmap/busquinientos"
+                android:text=" 507    Rodelillo-Playa Ancha"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/quinientos"
+                android:drawableLeft="@mipmap/busquinientos"
+                android:text=" 508    Las Lomas-Playa Ancha"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/quinientos"
+                android:drawableLeft="@mipmap/busquinientos"
+                android:text=" 509    Baron-Viña Del Mar"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/quinientos"
+                android:drawableLeft="@mipmap/busquinientos"
+                android:text=" 510    Placeres-Porvenir"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/quinientos"
+                android:drawableLeft="@mipmap/busquinientos"
+                android:text=" 511    Ramaditas-Cementerio"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/quinientos"
+
+                android:drawableLeft="@mipmap/busquinientos"
+                android:text=" 512    Cuesta Colorada-San Luis"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/quinientos"
+                android:drawableLeft="@mipmap/busquinientos"
+                android:text=" 513    El Vergel-Cordillera"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/quinientos"
+                android:drawableLeft="@mipmap/busquinientos"
+                android:text=" 514    Cerro Alegre-Portales"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/quinientos"
+                android:drawableLeft="@mipmap/busquinientos"
+                android:text=" 515    Cerro Alegre-Nudo Barón"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/quinientos"
+                android:drawableLeft="@mipmap/busquinientos"
+                android:text=" 516    Ecuador-La Bala"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/quinientos"
+                android:drawableLeft="@mipmap/busquinientos"
+                android:text=" 517    Av. Francia-Cerro Monjas-Mariposa"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/quinientos"
+                android:drawableLeft="@mipmap/busquinientos"
+                android:text=" 519    Ecuador-Cerro Yungay"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/quinientos"
+                android:drawableLeft="@mipmap/busquinientos"
+                android:text=" 520    Rodelillo-Laguna Verde"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/quinientos"
+                android:drawableLeft="@mipmap/busquinientos"
+                android:text=" 521    Ramaditas-Plaza Aduana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/quinientos"
+                android:drawableLeft="@mipmap/busquinientos"
+                android:text=" 522    Playa Ancha-La Planchada"
+                android:textAlignment="viewStart" />
+
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/granvalpo"
+                android:drawableLeft="@mipmap/busbeige"
+                android:text=" 601    Playa Ancha-Gran Bretaña-Rotonda Con Con"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/boton602"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/granvalpo"
+                android:drawableLeft="@mipmap/busbeige"
+                android:onClick="boton602"
+                android:text=" 602    Playa Ancha-Con Con"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/boton603"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/granvalpo"
+                android:drawableLeft="@mipmap/busbeige"
+                android:text=" 603    Gómez Carreño-Montedónico"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/granvalpo"
+                android:drawableLeft="@mipmap/busbeige"
+                android:text=" 604    Gómez Carreño-Placeres"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/granvalpo"
+                android:drawableLeft="@mipmap/busbeige"
+                android:text=" 605    Playa Ancha-Con Con"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/granvalpo"
+                android:drawableLeft="@mipmap/busbeige"
+                android:text=" 606    Playa Ancha-Gómez Carreño"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/granvalpo"
+                android:drawableLeft="@mipmap/busbeige"
+                android:text=" 607    Playa Ancha-Reñaca"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/granvalpo"
+                android:drawableLeft="@mipmap/busbeige"
+                android:text=" 608    Aduana-Puente Colmo"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/granvalpo"
+                android:drawableLeft="@mipmap/busbeige"
+                android:text=" 609    Vista Hermosa-Sector Colmo"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/granvalpo"
+                android:drawableLeft="@mipmap/busbeige"
+                android:text=" 610    El Olivar-Playa Ancha"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/granvalpo"
+                android:drawableLeft="@mipmap/busbeige"
+                android:text=" 611    El Olivar-Montedónico"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/granvalpo"
+                android:drawableLeft="@mipmap/busbeige"
+                android:text=" 612    Playa Ancha-Limonares"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/granvalpo"
+                android:drawableLeft="@mipmap/busbeige"
+                android:text=" 901    Placilla-Invica-Playa Ancha"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/granvalpo"
+                android:drawableLeft="@mipmap/busbeige"
+                android:text="   Plaza Victoria-Invica-Placilla"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/granvalpo"
+                android:drawableLeft="@mipmap/busbeige"
+                android:text=" 902    Placilla-Playa Ancha"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/granvalpo"
+                android:drawableLeft="@mipmap/busbeige"
+                android:text=" 903    Placilla-Poniente-Playa Ancha"
+                android:textAlignment="viewStart" />
+
+
+            <TextView
+                android:id="@+id/vinabus"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/texto_estilo"
+                android:text="Viña Bus S.A"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus"
+                android:drawableLeft="@mipmap/busverdee"
+                android:text=" 201    Mirador de Reñaca-Aduana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus"
+                android:drawableLeft="@mipmap/busverdee"
+                android:text=" 202    Glorias Navales-Aduana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus"
+                android:drawableLeft="@mipmap/busverdee"
+                android:text=" 203    El Salto-Aduana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus"
+                android:drawableLeft="@mipmap/busverdee"
+                android:text=" 204    Forestal-Aduana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus"
+                android:drawableLeft="@mipmap/busverdee"
+                android:text=" 205    Villa Independencia-Aduana"
+                android:textAlignment="viewStart"/>
+
+
+
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus"
+                android:drawableLeft="@mipmap/busverdee"
+                android:text=" 207    Santa Julia-Plaza Aduana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus"
+                android:drawableLeft="@mipmap/busverdee"
+                android:text=" 208    Quinta-Borinquen"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus"
+                android:drawableLeft="@mipmap/busverdee"
+                android:text=" 208-R    Miraflores-Recreo-Esperanza"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus"
+                android:drawableLeft="@mipmap/busverdee"
+                android:text=" 209    Miraflores-Plaza Victoria"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus"
+                android:drawableLeft="@mipmap/busverdee"
+                android:text=" 210    Mirador de Reñaca-Aduana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus"
+                android:drawableLeft="@mipmap/busverdee"
+                android:text=" 211    Santa Ines-Aduana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus"
+                android:drawableLeft="@mipmap/busverdee"
+                android:text=" 212    Santa Julia-Aduana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus"
+                android:drawableLeft="@mipmap/busverdee"
+                android:text=" 213    Mirador Reñaca-Aduana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus"
+                android:drawableLeft="@mipmap/busverdee"
+                android:text=" 214    Santa Julia-Aduana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus"
+                android:drawableLeft="@mipmap/busverdee"
+                android:text=" 215    Gómez Carreño-Cerro Toro"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus"
+                android:drawableLeft="@mipmap/busverdee"
+                android:text=" 216    Gómez Carreño-Mesina"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus"
+                android:drawableLeft="@mipmap/busverdee"
+                android:text=" 217    Reñaca Alto-Forestal"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus2"
+                android:drawableLeft="@mipmap/busazul"
+                android:text=" 401    Santa Julia-Placeres"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus2"
+                android:drawableLeft="@mipmap/busazul"
+                android:text=" 402    Placilla-Con Con"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus2"
+                android:drawableLeft="@mipmap/busazul"
+                android:text=" 403    El Olvar-Las Palmas"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus2"
+                android:drawableLeft="@mipmap/busazul"
+                android:text=" 404    Forestal-Gómes Carreño-Reñaca"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus2"
+                android:drawableLeft="@mipmap/busazul"
+                android:text=" 405    Forestal-Santa Ines-Reñaca"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus2"
+                android:drawableLeft="@mipmap/busazul"
+                android:text=" 406    Glorias Navales-Placilla-Peñuelas"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus2"
+                android:drawableLeft="@mipmap/busazul"
+                android:text=" 407    Reñaca Alto-Agua Santa-Juan Pablo II "
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus2"
+                android:drawableLeft="@mipmap/busazul"
+                android:text=" 409    Chorrillos-Tranque Sur-Puerto Montt"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus2"
+                android:drawableLeft="@mipmap/busazul"
+                android:text=" 410    Reñaca Alto-Villa Linda-Los Placeres"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus2"
+                android:drawableLeft="@mipmap/busazul"
+                android:text=" 411    Reñaca Alto-Viña Del Mar-Los Placeres"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/vinabus2"
+                android:drawableLeft="@mipmap/busazul"
+                android:text=" 412    Reñaca Alto-Villa Rukan-Reñaca-Forestal"
+                android:textAlignment="viewStart" />
+
+
+            <TextView
+                android:id="@+id/granvalpo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/texto_estilo"
+                android:text="Fenur S.A"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 101    Belloto Norte-Aduana"
+                android:textAlignment="viewStart"
+                />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 101-D   Belloto Norte-Troncal Sur-Aduana "
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 102    Huanhuali-Aduana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 102-D    Huanhuali-Troncal Sur"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 103    Peumo-Aduana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 104-D    Cumming-Troncal Sur-Aduana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 105    Colón-Plaza Victoria"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 105-D    Peñablanca-Troncal Sur-Plaza Victoria"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 106    Ojos de Agua-Playa Ancha"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 106-D    Alejandro Peralta-Troncal Sur"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 107    Troncos Viejos-Las Rosas-Playa Ancha"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 107-D    Troncos Viejos-Troncal Sur"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 108    Peñablanca-Mena-Aduana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 108-D    Mena-Troncal Sur-Aduana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 109    Villa Alemana-Troncos Viejos-Playa Ancha"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 110    Peñablanca-Cien Aguilas-Aduana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 110-D    Cien Aguilas-Troncal Sur"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 111    Los Pinos-Hospital-Peyronet-Playa Ancha"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 111-D    La Aguada-Los Pinos-Troncal Sur"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 112    Los Pinos-Colinas de Oro-Playa Ancha"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 113    Belloto 2000-Playa Ancha"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 113-D    Belloto 2000-Troncal Sur-Playa Ancha"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 114    Vega-Aduana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 114-D    Vega-Troncal Sur-Aduana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 115    Belloto Sur-Playa Ancha"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 115-D    Belloto Sur-Troncal Sur-Playa Ancha"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 116    Huanhuali-Villa Alemana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 117    Bruselas-Quilpúe"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 119    Troncos Viejos-Pompeya"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 120    San José-Villa Alemana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 121    Villa Alemana-Chacao"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 122    Belloto Norte-Los Pinos"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 124    Villa Alemana Centro-Nueva Porvenir"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 125    Tierras Rojas-Hospital-Belloto Norte"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 126    El Sol-Retiro"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/fenur"
+                android:drawableLeft="@mipmap/busrojo"
+                android:text=" 127    Cumming-Aduana"
+                android:textAlignment="viewStart" />
+
+
+            <TextView
+                android:id="@+id/codetran"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/texto_estilo"
+                android:text="Codetran S.A"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/codetran"
+                android:drawableLeft="@mipmap/busamarillo"
+                android:text="     Playa Victoria-Placilla-Universidad"
+                android:textAlignment="viewStart" />
+
+            <TextView
+                android:id="@+id/codetran"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/texto_estilo"
+                android:text="Top Tur S.A"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/toptur"
+                android:drawableLeft="@mipmap/bustoptur"
+                android:text=" 701    Cordillera-Chilectra"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/toptur"
+                android:drawableLeft="@mipmap/bustoptur"
+                android:text=" 702    Cementerio-Playa Ancha-Rocuant"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/toptur"
+                android:drawableLeft="@mipmap/bustoptur"
+                android:text=" 703    San Roque-Playa Ancha-Santa Maria"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/toptur"
+                android:drawableLeft="@mipmap/bustoptur"
+                android:text=" 704    San Roque-Libertad-15 Norte"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/toptur"
+                android:drawableLeft="@mipmap/bustoptur"
+                android:text=" 705    Explanada-Sanatorio-Ibsen"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/toptur"
+                android:drawableLeft="@mipmap/bustoptur"
+                android:text=" 706    San Roque-Camino Antiguo Stgo-Gran Bretaña"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/toptur"
+                android:drawableLeft="@mipmap/bustoptur"
+                android:text=" 707    San Roque-Parque Los Ingleses-Aduana"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/toptur"
+                android:drawableLeft="@mipmap/bustoptur"
+                android:text=" 708    Explanada-Ibsen-Sanatorio"
+                android:textAlignment="viewStart" />
+
+
+            <TextView
+                android:id="@+id/viñabus"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/texto_estilo"
+                android:text="Trolebuses Chile S.A"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/trole"
+                android:drawableLeft="@mipmap/trole"
+                android:text=" 802    Local Valparaíso"
+                android:textAlignment="viewStart" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

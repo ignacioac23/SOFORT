@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/volver"
+        android:icon="@drawable/volver"
+        android:title="precio"
+        android:visible="true"
+        app:showAsAction="always" />
+
+
+
+    <item
+        android:id="@+id/tarifas"
+        android:icon="@mipmap/money"
+        android:title="precio"
+        android:visible="true"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/tarifa2"
+        android:title="Reportar Datos Erróneos"
+        android:visible="true"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/tarifa3"
+        android:title="Reportar el Estado de Servicio"
+        android:visible="true"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/tarifa4"
+        android:title="Ver Reportes de Líneas"
+        android:visible="true"
+        app:showAsAction="never"
+        />
+
+
+</menu>
